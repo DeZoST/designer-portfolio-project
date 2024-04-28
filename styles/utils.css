@@ -28,11 +28,12 @@
   font-size: 14px;
 }
 
-.arrow_btn{
+.arrow__btn{
   color: var(--clr-white);
+  transition: 0.3s;
 }
 
-.btn1, .arrow_btn{
+.btn1, .arrow__btn{
   background-color: var(--clr-black);
 }
 
@@ -40,11 +41,11 @@
   background-color: var(--clr-light-red);
 }
 
-.btn1:hover, .btn2:hover, .arrow_btn:hover {
+.btn1:hover, .btn2:hover, .arrow__btn:hover {
   transform: scale(1.1);
 }
 
-.btn1:hover, .arrow_btn:hover{
+.btn1:hover, .arrow__btn:hover{
   background-color: var(--clr-galactic-blue);
 }
 

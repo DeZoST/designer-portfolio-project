@@ -193,6 +193,50 @@ section {
   margin-inline: auto;
 }
 
+/* PROJECTS */
+
+.projects{
+  margin-top: 7rem;
+}
+
+.projects__title{
+  font-size: var(--fs-phone-heading-s);
+  color: var(--clr-black);
+  font-weight: 700;
+  text-align: center;
+}
+
+.projects__carousel-container{
+  width: 100%;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.projects__carousel{
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease;
+}
+
+.slide img{
+  max-width: 270px;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.projects__arrow-container{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.arrow__btn {
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
 .hidden {
   opacity: 0;
   transition: all 2s;
