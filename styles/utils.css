@@ -104,9 +104,19 @@
     font-size: var(--fs-tablet-heading-l);
   }
 
+  .hero__description{
+    max-width: 45ch;
+    margin-top: 1.8335rem;
+  }
+
   .hero__cards-container{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    margin-top: 4rem;
+  }
+
+  .hero__card{
+    gap: 1.5rem;
   }
 
   .hero__card:nth-child(1) {
@@ -143,6 +153,49 @@
 /* Desktop */
 @media (min-width: 1440px) {
   .container {
-    max-width: 1280px;
+    max-width: 1110px;
+  }
+
+  .hero__title{
+    font-size: var(--fs-desktop-heading-l);
+  }
+
+  .hero__description{
+    max-width: 53ch;
+  }
+
+  .hero__cards-container{
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .hero__card:nth-child(1) {
+    grid-area: 1 / 1 / 3 / 3;
+    background-color: var(--clr-galactic-blue);
+  }
+  
+  .hero__card:nth-child(2) {
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: var(--clr-summer-yellow);
+  }
+  
+  .hero__card:nth-child(3) {
+    grid-area: 1 / 4 / 2 / 5;
+    background-color: var(--clr-light-pink);
+  }
+  
+  .hero__card:nth-child(4) {
+    grid-area: 2 / 3 / 3 / 5;
+    background-color: var(--clr-light-red);
+  }
+  
+  .hero__card:nth-child(5) {
+    grid-area: 1 / 5 / 2 / 7;
+    background-color: var(--clr-cyan);
+  }
+  
+  .hero__card:nth-child(6) {
+    grid-area: 2 / 5 / 3 / 7;
+    background-color: var(--clr-dark-purple);
   }
 }
