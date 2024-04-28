@@ -163,6 +163,36 @@ section {
   background-color: var(--clr-dark-purple);
 }
 
+/* ABOUT */
+
+.about{
+  margin-top: 7rem;
+}
+
+.about__image{
+  height: 300px;
+  width: 300px;
+  margin-inline: auto;
+}
+
+.about__text-container{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.about__title{
+  font-size: var(--fs-phone-heading-s);
+  color: var(--clr-black);
+  font-weight: 700;
+}
+
+.btn2{
+  margin-inline: auto;
+}
+
 .hidden {
   opacity: 0;
   transition: all 2s;
