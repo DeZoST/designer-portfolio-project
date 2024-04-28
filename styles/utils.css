@@ -1,0 +1,73 @@
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+
+.btn1, .btn2 {
+  border-radius: 28px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
+  transition: 0.3s;
+  color: var(--clr-light-cream);
+
+}
+
+.arrow_btn{
+  color: var(--clr-white);
+}
+
+.btn1, .arrow_btn{
+  background-color: var(--clr-black);
+}
+
+.btn2{
+  background-color: var(--clr-ligh-red);
+}
+
+.btn1:hover, .btn2:hover, .arrow_btn:hover {
+  transform: scale(1.1);
+}
+
+.btn1:hover, .arrow_btn:hover{
+  background-color: var(--clr-galactic-blue);
+}
+
+.btn2:hover{
+  background-color: var(--clr-summer-yellow);
+}
+
+.container {
+  width: 90%;
+  margin-inline: auto;
+  margin-bottom: 10rem;
+  padding: 0;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+}
