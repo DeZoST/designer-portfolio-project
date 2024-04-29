@@ -10,6 +10,7 @@ function scrollToCurrentItem() {
   slides[currentItemIndex].scrollIntoView({
     behavior: "smooth",
     inline: "center",
+    block: "center"
   });
 }
 
