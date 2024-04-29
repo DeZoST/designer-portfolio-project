@@ -12,8 +12,6 @@ function scrollToCurrentItem() {
   });
 }
 
-scrollToCurrentItem();
-
 function nextItem() {
   if (currentItemIndex < slides.length - 1) {
     currentItemIndex++;
