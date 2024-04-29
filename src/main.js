@@ -5,6 +5,7 @@ const container = document.querySelector(".projects__carousel-container");
 
 let currentItemIndex = 0;
 
+// Manage the slider
 function scrollToCurrentItem() {
   slides[currentItemIndex].scrollIntoView({
     behavior: "smooth",
