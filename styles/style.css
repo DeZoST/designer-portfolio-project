@@ -220,7 +220,7 @@ section {
   transition: transform 0.5s ease;
 }
 
-.slide img{
+.slide__image{
   max-width: 270px;
   margin: 0 0.5rem;
   border-radius: 0.5rem;

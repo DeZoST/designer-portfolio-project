@@ -76,6 +76,10 @@
   padding: 0;
 }
 
+.projects{
+  width: 100%;
+}
+
 /* Tablet */
 @media (min-width: 768px) {
 
@@ -186,6 +190,13 @@
   .about__title{
     font-size: var(--fs-tablet-heading-s);
     line-height: 40px;
+  }
+
+  /* PROJECTS */
+
+  .slide__image{
+    max-width: 540px;
+    margin: 0 15px;
   }
 }
 

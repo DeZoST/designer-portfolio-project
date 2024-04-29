@@ -3,6 +3,7 @@ const slides = document.querySelectorAll('.slide');
 const carousel = document.querySelector(".projects__carousel");
 const slideWidth = 286;
 
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -18,6 +19,7 @@ let carouselOffset = 0;
 
 buttons.forEach((button) => {
     button.addEventListener('click', (event) => {
+        console.log(slideWidth);
         const calcNextSlide = event.target.id === "next" ? 1 : -1;
         const slideActive = document.querySelector('.active');
         let newIndex = calcNextSlide + [...slides].indexOf(slideActive);
