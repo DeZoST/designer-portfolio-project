@@ -212,7 +212,7 @@ section {
 
 .projects__carousel-container{
   width: 100%;
-  overflow: hidden;
+  overflow-x: scroll;
   margin: 2rem 0;
 }
 
@@ -223,11 +223,21 @@ section {
   transition: transform 0.5s ease;
 }
 
+[aria-label="gallery"]{
+  -webkit-overflow-scrolling: touch;
+  -webkit-scroll-snap-type: mandatory;
+  -ms-scroll-snap-type: mandatory;
+  scroll-snap-type: mandatory;
+  -webkit-scroll-snap-points-x: repeat(100%);
+  -ms-scroll-snap-points-x: repeat(100%);
+}
+
 .slide__image{
   max-width: 270px;
   margin: 0 0.5rem;
   border-radius: 0.5rem;
 }
+
 
 .projects__arrow-container{
   display: flex;
