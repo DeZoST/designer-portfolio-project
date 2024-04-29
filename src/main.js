@@ -1,36 +1,41 @@
 const buttons = document.querySelectorAll('.arrow__btn');
 const slides = document.querySelectorAll('.slide');
 const carousel = document.querySelector(".projects__carousel");
-const slideWidth = 286;
+const container = document.querySelector(".projects__carousel-container");
 
-let carouselOffset = 0;
+let currentItemIndex = 0;
 
-buttons.forEach((button) => {
-    button.addEventListener('click', (event) => {
-        console.log(slideWidth);
-        const calcNextSlide = event.target.id === "next" ? 1 : -1;
-        const slideActive = document.querySelector('.active');
-        let newIndex = calcNextSlide + [...slides].indexOf(slideActive);
-        
-        carouselOffset += -calcNextSlide * slideWidth;
-        carousel.style.transform = `translateX(${carouselOffset}px)`;
 
-        // Vérifiez si l'index est en dehors des limites et ajustez-le si nécessaire
-        if (newIndex < 0) {
-            newIndex = slides.length - 1;
-            carouselOffset = -slideWidth * 2;
-            carousel.style.transform = `translateX(${carouselOffset}px)`;
-        } else if (newIndex >= slides.length) {
-            newIndex = 0;
-            carouselOffset = 0;
-            carouselOffset = slideWidth * 2;
-            carousel.style.transform = `translateX(${carouselOffset}px)`;
-        }
-        
-        slides[newIndex].classList.add('active');
-        slideActive.classList.remove('active');
-    });
-});
+function scrollToCurrentItem() {
+  slides[currentItemIndex].scrollIntoView({ behavior: 'smooth', inline: 'center' });
+}
+
+scrollToCurrentItem();
+
+function nextItem() {
+  if (currentItemIndex < slides.length - 1) {
+    currentItemIndex++;
+    console.log(currentItemIndex);
+    scrollToCurrentItem();
+  } else{
+    currentItemIndex = 0;
+    scrollToCurrentItem();
+  }
+}
+
+function prevItem() {
+  if (currentItemIndex > 0) {
+    currentItemIndex--;
+    console.log(currentItemIndex);
+    scrollToCurrentItem();
+  } else{
+    currentItemIndex = slides.length - 1;
+    scrollToCurrentItem();
+  }
+}
+
+document.getElementById('next').addEventListener('click', nextItem);
+document.getElementById('prev').addEventListener('click', prevItem);
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
