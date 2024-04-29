@@ -3,18 +3,6 @@ const slides = document.querySelectorAll('.slide');
 const carousel = document.querySelector(".projects__carousel");
 const slideWidth = 286;
 
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        }
-    });
-});
-
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
-
 let carouselOffset = 0;
 
 buttons.forEach((button) => {
@@ -44,3 +32,13 @@ buttons.forEach((button) => {
     });
 });
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));

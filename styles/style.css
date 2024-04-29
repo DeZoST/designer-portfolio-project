@@ -93,18 +93,22 @@ section {
   margin-top: 1rem;
 }
 
-/* HEADER */
+/* HEADER/FOOTER */
 
-.header__navbar {
+.header__navbar, .footer__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
 }
 
-.header__logo {
+.header__logo, .footer__logo {
   height: 48px;
   width: 48px;
+}
+
+.footer{
+  margin-top: 1rem;
 }
 
 /* HERO */
@@ -235,6 +239,29 @@ section {
 .arrow__btn {
   border-radius: 50%;
   padding: 1.5rem;
+}
+
+/* CONTACT */
+
+.contact{
+  margin-top: 7rem;
+}
+
+.contact__content{
+  background-color: var(--clr-black);
+  color: var(--clr-light-cream);
+  padding: 3.312rem 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.contact__title{
+  font-size: var(--fs-phone-heading-s);
+  font-weight: 700;
+}
+
+.contact__description, .contact__content a{
+  margin-top: 24px;
 }
 
 .hidden {
