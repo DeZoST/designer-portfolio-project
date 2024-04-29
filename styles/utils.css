@@ -312,7 +312,7 @@
   /* PROJECTS */
 
   .projects__title {
-    font-size: var(--fs);
+    font-size: var(--fs-heading-m);
   }
 
   /* CONTACT */
