@@ -17,7 +17,6 @@
 /* @media (min-width: 1536px) {} */
 
 /* Boutons */
-button,
 .btn1,
 .btn2,
 .arrow__btn {
@@ -72,10 +71,6 @@ button,
   flex-direction: column;
   justify-content: space-between;
   gap: 2.75rem;
-}
-
-.hero__card img {
-  align-self: flex-end;
 }
 
 .container {
