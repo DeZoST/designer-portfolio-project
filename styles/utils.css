@@ -16,8 +16,11 @@
 /* 2xl */
 /* @media (min-width: 1536px) {} */
 
+/* Boutons */
+button,
 .btn1,
-.btn2 {
+.btn2,
+.arrow__btn {
   border-radius: 28px;
   font-weight: 700;
   cursor: pointer;
@@ -31,22 +34,14 @@
 
 .arrow__btn {
   color: var(--clr-white);
-  transition: 0.3s;
 }
 
-.btn1,
-.arrow__btn {
+.btn1 {
   background-color: var(--clr-black);
 }
 
 .btn2 {
   background-color: var(--clr-light-red);
-}
-
-.btn1:hover,
-.btn2:hover,
-.arrow__btn:hover {
-  transform: scale(1.1);
 }
 
 .btn1:hover,
@@ -56,6 +51,12 @@
 
 .btn2:hover {
   background-color: var(--clr-summer-yellow);
+}
+
+.btn1:hover,
+.btn2:hover,
+.arrow__btn:hover {
+  transform: scale(1.1);
 }
 
 .hero__card {
@@ -133,32 +134,26 @@
 
   .hero__card:nth-child(1) {
     grid-area: 1 / 1 / 3 / 3;
-    background-color: var(--clr-galactic-blue);
   }
 
   .hero__card:nth-child(2) {
     grid-area: 1 / 3 / 2 / 4;
-    background-color: var(--clr-summer-yellow);
   }
 
   .hero__card:nth-child(3) {
     grid-area: 1 / 4 / 2 / 5;
-    background-color: var(--clr-light-pink);
   }
 
   .hero__card:nth-child(4) {
     grid-area: 2 / 3 / 3 / 5;
-    background-color: var(--clr-light-red);
   }
 
   .hero__card:nth-child(5) {
     grid-area: 3 / 1 / 4 / 3;
-    background-color: var(--clr-cyan);
   }
 
   .hero__card:nth-child(6) {
     grid-area: 3 / 3 / 4 / 5;
-    background-color: var(--clr-dark-purple);
   }
 
   /* ABOUT */
@@ -191,13 +186,12 @@
   }
 
   .about__title {
-    font-size: var(--fs-tablet-heading-s);
     line-height: 40px;
   }
 
   /* PROJECTS */
 
-  .projects__title {
+  .about__title, .projects__title, .contact__title {
     font-size: var(--fs-tablet-heading-s);
   }
 
@@ -207,11 +201,6 @@
   }
 
   /* CONTACT */
-
-  .contact__title {
-    font-size: var(--fs-tablet-heading-s);
-  }
-
   .contact__content {
     gap: 26px;
   }
@@ -253,32 +242,26 @@
 
   .hero__card:nth-child(1) {
     grid-area: 1 / 1 / 3 / 3;
-    background-color: var(--clr-galactic-blue);
   }
 
   .hero__card:nth-child(2) {
     grid-area: 1 / 3 / 2 / 4;
-    background-color: var(--clr-summer-yellow);
   }
 
   .hero__card:nth-child(3) {
     grid-area: 1 / 4 / 2 / 5;
-    background-color: var(--clr-light-pink);
   }
 
   .hero__card:nth-child(4) {
     grid-area: 2 / 3 / 3 / 5;
-    background-color: var(--clr-light-red);
   }
 
   .hero__card:nth-child(5) {
     grid-area: 1 / 5 / 2 / 7;
-    background-color: var(--clr-cyan);
   }
 
   .hero__card:nth-child(6) {
     grid-area: 2 / 5 / 3 / 7;
-    background-color: var(--clr-dark-purple);
   }
 
   /* ABOUT */
@@ -301,22 +284,16 @@
   }
 
   .about__title {
-    font-size: var(--fs-heading-m);
     line-height: var(--lh-heading-m);
   }
 
   /* PROJECTS */
 
-  .projects__title {
+  .about__title, .projects__title, .contact__title {
     font-size: var(--fs-heading-m);
   }
 
   /* CONTACT */
-
-  .contact__title {
-    font-size: var(--fs-heading-m);
-  }
-
   .contact__content {
     display: flex;
     text-align: left;
