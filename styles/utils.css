@@ -82,7 +82,7 @@
 }
 
 /* Tablet */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   *,
   *::before,
   *::after {
@@ -90,7 +90,7 @@
   }
 
   .container {
-    max-width: 768px;
+    max-width: 48rem;
   }
 
   /* HEADER/FOOTER */
@@ -102,8 +102,8 @@
 
   .header__logo,
   .footer__logo {
-    height: 64px;
-    width: 64px;
+    height: 4rem;
+    width: 4rem;
   }
 
   .btn1,
@@ -172,8 +172,8 @@
     position: absolute;
     top: 0;
     left: -4.5rem;
-    height: 364px;
-    width: 364px;
+    height: 22.75rem;
+    width: 22.75rem;
   }
 
   .btn2 {
@@ -199,13 +199,12 @@
   }
 
   .slide__image {
-    max-width: 540px;
-    margin-inline: 15px;
+    max-width: 33.75rem;
   }
 
   /* CONTACT */
   .contact__content {
-    gap: 26px;
+    gap: 1.625rem;
   }
 
   .contact__description, .contact__content a {
@@ -219,9 +218,9 @@
 }
 
 /* Desktop */
-@media (min-width: 1440px) {
+@media (min-width: 90rem) {
   .container {
-    max-width: 1110px;
+    max-width: 69.375rem;
   }
 
   /* HERO */
@@ -270,8 +269,8 @@
   /* ABOUT */
 
   .about__image {
-    height: 445px;
-    width: 445px;
+    height: 27.8125rem;
+    width: 27.8125rem;
     position: static;
     margin: 0;
   }
@@ -311,8 +310,8 @@
 }
 
 /* 2xl */
-@media (min-width: 1536px) {
+@media (min-width: 96rem) {
   .container {
-    max-width: 1536px;
+    max-width: 96rem;
   }
 }

@@ -121,8 +121,8 @@ section {
 
 .header__logo,
 .footer__logo {
-  height: 48px;
-  width: 48px;
+  height: 3rem;
+  width: 3rem;
 }
 
 .hero__title,
@@ -176,7 +176,7 @@ section {
 }
 
 .hero__card {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   color: var(--clr-white);
   font-size: var(--fs-hero-cards);
   padding: 1.5rem;
@@ -192,8 +192,8 @@ section {
 }
 
 .about__image {
-  height: 300px;
-  width: 300px;
+  height: 18.75rem;
+  width: 18.75rem;
   margin-inline: auto;
 }
 
@@ -238,7 +238,7 @@ section {
 }
 
 .slide__image {
-  max-width: 270px;
+  max-width: 16.875rem;
   margin: 0 0.5rem;
   border-radius: 0.5rem;
 }
