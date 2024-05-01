@@ -34,6 +34,9 @@ button,
 
 .arrow__btn {
   color: var(--clr-white);
+  border-radius: 50%;
+  background-color: var(--clr-black);
+  padding: 1.5rem;
 }
 
 .btn1 {
@@ -223,7 +226,7 @@ button,
 
   /* HERO */
 
-  .hero {
+  .hero, .contact__description {
     margin-top: 3rem;
   }
 
@@ -304,9 +307,6 @@ button,
 
   .contact__content a{
     margin: 0;
-  }
-  .contact__description{
-    margin-top: 3rem;
   }
 }
 
