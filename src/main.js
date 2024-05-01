@@ -5,14 +5,14 @@ const container = document.querySelector(".projects__carousel-container");
 
 let currentItemIndex = 0;
 
+// Manage the slider/carousel
 function scrollToCurrentItem() {
   slides[currentItemIndex].scrollIntoView({
     behavior: "smooth",
     inline: "center",
+    block: "center"
   });
 }
-
-scrollToCurrentItem();
 
 function nextItem() {
   if (currentItemIndex < slides.length - 1) {
