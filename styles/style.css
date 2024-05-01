@@ -294,7 +294,7 @@ section {
   background-color: var(--clr-dark-purple);
 }
 
-.hero__card img {
+.hero__card-image {
   align-self: flex-end;
 }
 

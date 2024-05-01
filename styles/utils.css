@@ -16,6 +16,43 @@
 /* 2xl */
 /* @media (min-width: 1536px) {} */
 
+:root {
+  /* Colors */
+  --clr-galactic-blue: #755cde;
+  --clr-summer-yellow: #f6a560;
+  --clr-light-pink: #f39e9e;
+  --clr-light-red: #eb7565;
+  --clr-cyan: #61c4b7;
+  --clr-dark-purple: #552049;
+  --clr-medium-brown: #7a746e;
+  --clr-light-cream: #fff7f0;
+  /* Neutral */
+  --clr-black: #030303;
+  --clr-white: #ffffff;
+
+  /* Line Height */
+  --lh-phone-body: 26px;
+  --lh-body-m: 28px;
+  --lh-heading-s: 40px;
+  --lh-heading-m: 51px;
+  --lh-heading-l: 70px;
+
+  /* Font sizes */
+  --fs-body: 18px;
+  --fs-heading-m: 40px;
+  --fs-hero-cards: 24px;
+  /* DESKTOP */
+  --fs-desktop-heading-s: 32px;
+  --fs-desktop-heading-l: 56px;
+  /* TABLET */
+  --fs-tablet-heading-s: 32px;
+  --fs-tablet-heading-l: 44px;
+  /* PHONE */
+  --fs-phone-body: 16px;
+  --fs-phone-heading-s: 26px;
+  --fs-phone-heading-l: 36px;
+}
+
 /* Boutons */
 .btn1,
 .btn2,
