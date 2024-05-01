@@ -30,7 +30,7 @@
   transition: 0.3s;
   color: var(--clr-light-cream);
   padding: 0.5rem 1.75rem;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .arrow__btn {
@@ -108,7 +108,7 @@
 
   .btn1,
   .btn2 {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .btn1{
@@ -189,7 +189,7 @@
   }
 
   .about__title {
-    line-height: 40px;
+    line-height: 2.5rem;
   }
 
   /* PROJECTS */
@@ -200,7 +200,7 @@
 
   .slide__image {
     max-width: 540px;
-    margin: 0 15px;
+    margin-inline: 15px;
   }
 
   /* CONTACT */
@@ -210,7 +210,7 @@
 
   .contact__description, .contact__content a {
     margin-inline: auto;
-    margin-top: 26px;
+    margin-top: 1.625rem;
   }
 
   .contact__description {

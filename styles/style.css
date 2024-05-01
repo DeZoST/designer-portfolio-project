@@ -13,26 +13,26 @@
   --clr-white: #ffffff;
 
   /* Line Height */
-  --lh-phone-body: 26px;
-  --lh-body-m: 28px;
-  --lh-heading-s: 40px;
-  --lh-heading-m: 51px;
-  --lh-heading-l: 70px;
+  --lh-phone-body: 1.625rem;
+  --lh-body-m: 1.75rem;
+  --lh-heading-s: 2.5rem;
+  --lh-heading-m: 3.1875rem;
+  --lh-heading-l: 4.375rem;
 
   /* Font sizes */
-  --fs-body: 18px;
-  --fs-heading-m: 40px;
-  --fs-hero-cards: 24px;
+  --fs-body: 1.125rem;
+  --fs-heading-m: 2.5rem;
+  --fs-hero-cards: 1.5rem;
   /* DESKTOP */
-  --fs-desktop-heading-s: 32px;
-  --fs-desktop-heading-l: 56px;
+  --fs-desktop-heading-s: 2rem;
+  --fs-desktop-heading-l: 3.5rem;
   /* TABLET */
-  --fs-tablet-heading-s: 32px;
-  --fs-tablet-heading-l: 44px;
+  --fs-tablet-heading-s: 2rem;
+  --fs-tablet-heading-l: 2.75rem;
   /* PHONE */
-  --fs-phone-body: 16px;
-  --fs-phone-heading-s: 26px;
-  --fs-phone-heading-l: 36px;
+  --fs-phone-body: 1rem;
+  --fs-phone-heading-s: 1.625rem;
+  --fs-phone-heading-l: 2.25rem;
 }
 
 /* Global */
@@ -257,11 +257,12 @@ section {
 
 .contact__title {
   color: var(--clr-white);
+  line-height: var(--lh-heading-s);
 }
 
 .contact__description,
 .contact__content a {
-  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 
 .hero__card:nth-child(1) {
