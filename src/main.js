@@ -37,8 +37,8 @@ function prevItem() {
 
 document.getElementById("next").addEventListener("click", nextItem);
 document.getElementById("prev").addEventListener("click", prevItem);
-document.getElementById("next").addEventListener("focus", nextItem);
-document.getElementById("prev").addEventListener("focus", prevItem);
+document.getElementById("next").addEventListener("touchstart", nextItem);
+document.getElementById("prev").addEventListener("touchstart", prevItem);
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
