@@ -213,10 +213,9 @@ section {
 
 .projects__carousel-container {
   width: 100%;
-  overflow-x: scroll;
   margin: 2rem 0;
   scrollbar-width: none;
-  -ms-overflow-style: none;
+  overflow-x: scroll;
 }
 
 .projects__carousel-container::-webkit-scrollbar {
@@ -226,15 +225,6 @@ section {
 .projects__carousel {
   max-width: 100%;
   transition: transform 0.5s ease;
-}
-
-[aria-label="gallery"] {
-  -webkit-overflow-scrolling: touch;
-  -webkit-scroll-snap-type: mandatory;
-  -ms-scroll-snap-type: mandatory;
-  scroll-snap-type: mandatory;
-  -webkit-scroll-snap-points-x: repeat(100%);
-  -ms-scroll-snap-points-x: repeat(100%);
 }
 
 .slide__image {
