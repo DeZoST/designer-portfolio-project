@@ -17,7 +17,6 @@ function scrollToCurrentItem() {
 function nextItem() {
   if (currentItemIndex < slides.length - 1) {
     currentItemIndex++;
-    console.log(currentItemIndex);
     scrollToCurrentItem();
   } else {
     currentItemIndex = 0;
@@ -28,7 +27,6 @@ function nextItem() {
 function prevItem() {
   if (currentItemIndex > 0) {
     currentItemIndex--;
-    console.log(currentItemIndex);
     scrollToCurrentItem();
   } else {
     currentItemIndex = slides.length - 1;
@@ -36,8 +34,11 @@ function prevItem() {
   }
 }
 
+
 document.getElementById("next").addEventListener("click", nextItem);
 document.getElementById("prev").addEventListener("click", prevItem);
+document.getElementById("next").addEventListener("focus", nextItem);
+document.getElementById("prev").addEventListener("focus", prevItem);
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
